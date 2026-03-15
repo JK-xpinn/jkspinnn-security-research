@@ -27,14 +27,15 @@ The domain **17ebook.com** was analyzed using threat intelligence tools to deter
 
 These results indicate that the domain has previously been associated with suspicious or malicious activity.
 
-threat-intelligence/17ebook-domain-investigation/screenshots/Wwhoislookup.png
+![WHOIS Lookup](threat-intelligence/17ebook-domain-investigation/screenshots/Wwhoislookup.png)
+
 ---
 
 # Detection Engine Results
 
 The following screenshot shows the antivirus engines that detected the domain as malicious.
 
-threat-intelligence/17ebook-domain-investigation/screenshots/Summary details.png
+![Detection Summary](threat-intelligence/17ebook-domain-investigation/screenshots/Summary%20details.png)
 
 Several vendors including Fortinet, Sophos, and Kaspersky classified the domain as phishing or malicious infrastructure.
 
@@ -45,7 +46,9 @@ Several vendors including Fortinet, Sophos, and Kaspersky classified the domain 
 DNS records reveal the network infrastructure associated with the domain.
 
 **A Record:** 208.91.196.152  
+
 **Name Servers:**  
+
 - sk.s7.ans1.ns147.klczy.com  
 - sk.s7.ans2.ns147.klczy.com  
 
@@ -55,7 +58,7 @@ DNS infrastructure analysis is important for identifying relationships between d
 
 # DNS Records Evidence
 
-threat-intelligence/17ebook-domain-investigation/screenshots/dNS.png)
+![DNS Records](threat-intelligence/17ebook-domain-investigation/screenshots/dNS.png)
 
 ---
 
@@ -64,18 +67,21 @@ threat-intelligence/17ebook-domain-investigation/screenshots/dNS.png)
 The domain uses a valid HTTPS certificate issued by ZeroSSL.
 
 **Certificate Issuer:** ZeroSSL ECC Domain Secure Site CA  
+
 **Certificate Validity:**  
-- Not Before: 09 July 2025  
-- Not After: 07 October 2025  
+Not Before: 09 July 2025  
+Not After: 07 October 2025  
+
 **Public Key Algorithm:** Elliptic Curve Cryptography using secp384r1  
 
 Although HTTPS encryption is present, attackers often use legitimate SSL certificates to make malicious websites appear trustworthy.
 
-**JARM fingerprint:**  
-1dd40d40d00040d00042d43d000000831b6af40378e2dd35eeac4e9311926e  
+**JARM fingerprint**
 
-JARM fingerprints help analysts track servers across different attack campaigns.
-threat-intelligence/17ebook-domain-investigation/screenshots/Http-certificate.png
+1dd40d40d00040d00042d43d000000831b6af40378e2dd35eeac4e9311926e
+
+![HTTPS Certificate](threat-intelligence/17ebook-domain-investigation/screenshots/Http-certificate.png)
+
 ---
 
 # 5 Passive DNS Historical Analysis
@@ -97,7 +103,7 @@ Frequent infrastructure changes can indicate attempts to evade detection or move
 
 # Passive DNS Timeline
 
-threat-intelligence/17ebook-domain-investigation/screenshots/Whoislookup.png
+![Passive DNS](threat-intelligence/17ebook-domain-investigation/screenshots/Whoislookup.png)
 
 ---
 
@@ -114,7 +120,9 @@ pay.17ebook.com
 48c7e.17ebook.com  
 
 Many of these subdomains appear randomly generated. Random subdomain patterns are often associated with automated malicious infrastructure or malware command and control systems.
-threat-intelligence/17ebook-domain-investigation/screenshots/subdomian.png
+
+![Subdomains](threat-intelligence/17ebook-domain-investigation/screenshots/subdomian.png)
+
 ---
 
 # 7 Malware Communication Analysis
@@ -135,7 +143,7 @@ Some of these files were detected by more than thirty antivirus engines. These f
 
 # Communicating Malware Files
 
-threat-intelligence/17ebook-domain-investigation/screenshots/infrasturre1.png
+![Malware Infrastructure](threat-intelligence/17ebook-domain-investigation/screenshots/infrasturre1.png)
 
 ---
 
@@ -149,7 +157,7 @@ This visualization helps analysts identify links between malicious infrastructur
 
 # Infrastructure Relationship Graph
 
-threat-intelligence/17ebook-domain-investigation/screenshots/graphy.png
+![Threat Graph](threat-intelligence/17ebook-domain-investigation/screenshots/graphy.png)
 
 ---
 
@@ -159,13 +167,15 @@ The following indicators were identified during the investigation.
 
 **Domain:** 17ebook.com  
 
-**IP Addresses:**  
+**IP Addresses**
+
 - 208.91.196.127  
 - 208.91.196.152  
 - 199.59.243.225  
 - 199.59.243.226  
 
-**Malicious Files:**  
+**Malicious Files**
+
 - zetvbdsius.exe  
 - turkeybrain.bat  
 - DielnHell.exe  
