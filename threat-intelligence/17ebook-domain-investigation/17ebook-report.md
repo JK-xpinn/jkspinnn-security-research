@@ -7,6 +7,18 @@ Threat Intelligence Tool: VirusTotal
 
 ---
 
+# Executive Summary
+
+This investigation analyzes the domain **17ebook.com** using VirusTotal threat intelligence data.
+
+The analysis identified multiple indicators associated with malicious infrastructure including suspicious DNS behavior, communication with malware samples, and detection by several security vendors.
+
+Evidence suggests the domain has been used in malware distribution activity and should be considered **high risk**.
+
+Security teams should block or monitor traffic related to this domain and associated infrastructure.
+
+---
+
 # 1 Investigation Objective
 
 The purpose of this investigation is to analyze the domain **17ebook.com** to determine whether it is associated with malicious infrastructure or cyber threat activity.
@@ -47,7 +59,7 @@ DNS records reveal the network infrastructure associated with the domain.
 
 **A Record:** 208.91.196.152  
 
-**Name Servers:**  
+**Name Servers**
 
 - sk.s7.ans1.ns147.klczy.com  
 - sk.s7.ans2.ns147.klczy.com  
@@ -68,7 +80,8 @@ The domain uses a valid HTTPS certificate issued by ZeroSSL.
 
 **Certificate Issuer:** ZeroSSL ECC Domain Secure Site CA  
 
-**Certificate Validity:**  
+**Certificate Validity**
+
 Not Before: 09 July 2025  
 Not After: 07 October 2025  
 
@@ -76,7 +89,7 @@ Not After: 07 October 2025
 
 Although HTTPS encryption is present, attackers often use legitimate SSL certificates to make malicious websites appear trustworthy.
 
-**JARM fingerprint**
+**JARM Fingerprint**
 
 1dd40d40d00040d00042d43d000000831b6af40378e2dd35eeac4e9311926e
 
@@ -88,7 +101,7 @@ Although HTTPS encryption is present, attackers often use legitimate SSL certifi
 
 Passive DNS analysis shows historical IP addresses associated with the domain.
 
-Examples include:
+Examples include
 
 208.91.196.127  
 199.59.243.226  
@@ -111,7 +124,7 @@ Frequent infrastructure changes can indicate attempts to evade detection or move
 
 Threat intelligence analysis identified more than eighty subdomains associated with the domain.
 
-Examples include:
+Examples include
 
 pay.17ebook.com  
 2b8be.17ebook.com  
@@ -129,7 +142,7 @@ Many of these subdomains appear randomly generated. Random subdomain patterns ar
 
 Threat intelligence results show several malicious files communicating with the domain infrastructure.
 
-Examples include:
+Examples include
 
 - zetvbdsius.exe  
 - turkeybrain.bat  
@@ -163,31 +176,38 @@ This visualization helps analysts identify links between malicious infrastructur
 
 # 9 Indicators of Compromise
 
-The following indicators were identified during the investigation.
-
-**Domain:** 17ebook.com  
-
-**IP Addresses**
-
-- 208.91.196.127  
-- 208.91.196.152  
-- 199.59.243.225  
-- 199.59.243.226  
-
-**Malicious Files**
-
-- zetvbdsius.exe  
-- turkeybrain.bat  
-- DielnHell.exe  
-- Restart.exe  
+| Type | Indicator |
+|-----|-----------|
+| Domain | 17ebook.com |
+| IP Address | 208.91.196.127 |
+| IP Address | 208.91.196.152 |
+| IP Address | 199.59.243.225 |
+| IP Address | 199.59.243.226 |
+| Malware File | zetvbdsius.exe |
+| Malware File | turkeybrain.bat |
+| Malware File | DielnHell.exe |
+| Malware File | Restart.exe |
 
 These indicators can be used by security teams to block or monitor suspicious activity.
 
 ---
 
+# Defensive Recommendations
+
+Organizations should consider implementing the following defensive actions
+
+• Block the domain **17ebook.com** at DNS or firewall level  
+• Monitor network logs for connections to identified IP addresses  
+• Add related malware signatures to endpoint detection tools  
+• Investigate hosts that previously communicated with this infrastructure  
+
+These actions help reduce exposure to potential malware campaigns associated with the domain.
+
+---
+
 # 10 Risk Assessment
 
-The investigation reveals several characteristics commonly associated with malicious infrastructure:
+The investigation reveals several characteristics commonly associated with malicious infrastructure
 
 - Use of WHOIS privacy protection  
 - Association with malicious files  
