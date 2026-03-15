@@ -1,133 +1,197 @@
-Threat Intelligence Investigation
+# Threat Intelligence Investigation Report  
+## Domain Analysis Case Study
 
-Domain: 17ebook.com
+Researcher: Adekunle A Joseph  
+Handle: JK_spinnn  
+Threat Intelligence Tool: VirusTotal  
 
-Researcher: Adekunle A Joseph
-Handle: JK_spinnn
-Tool used: VirusTotal
+---
 
-Investigation date: 23rd July 2025
+# 1 Investigation Objective
 
-1 Domain Overview
+The purpose of this investigation is to analyze the domain **17ebook.com** to determine whether it is associated with malicious infrastructure or cyber threat activity.
 
-The domain 17ebook.com was investigated to determine whether it is associated with malicious activity.
+The analysis focuses on domain reputation, infrastructure behavior, associated malware samples, and indicators of compromise.
 
-Registrar
-PDR Ltd PublicDomainRegistry.com
+---
 
-Creation Date
-21 September 2014
+# 2 Domain Overview
 
-WHOIS Privacy
-PrivacyProtect.org
+The domain **17ebook.com** was analyzed using threat intelligence tools to determine its reputation and infrastructure characteristics.
 
-Reputation Score
-Minus 89
+**Registrar:** PDR Ltd PublicDomainRegistry.com  
+**Creation Date:** 21 September 2014  
+**WHOIS Privacy:** PrivacyProtect.org  
+**Reputation Score:** -89  
+**Detection Rate:** 12 out of 94 security engines flagged the domain as malicious
 
-Detection rate
-12 security vendors flagged the domain out of 94 engines.
+These results indicate that the domain has previously been associated with suspicious or malicious activity.
+threat-intelligence/17ebook-domain-investigation/Screenshot/Wwhoislookup.png
+---
 
-These results indicate a high risk reputation.
+# Detection Engine Results
 
-Screenshot
+The following screenshot shows the antivirus engines that detected the domain as malicious.
 
-screenshots/detection-engines.png
+(threat-intelligence/17ebook-domain-investigation/Screenshot/Summary details.png)
 
-Insert in markdown like this.
+Several vendors including Fortinet, Sophos, and Kaspersky classified the domain as phishing or malicious infrastructure.
 
-![Detection Engines](screenshots/detection-engines.png)
-2 DNS Infrastructure Analysis
+---
 
-The domain infrastructure reveals the following DNS configuration.
+# 3 DNS Infrastructure Analysis
 
-A Record
-208.91.196.152
+DNS records reveal the network infrastructure associated with the domain.
 
-Name Servers
+**A Record:** 208.91.196.152  
+**Name Servers:**  
+- sk.s7.ans1.ns147.klczy.com  
+- sk.s7.ans2.ns147.klczy.com  
 
-sk.s7.ans1.ns147.klczy.com
-sk.s7.ans2.ns147.klczy.com
+DNS infrastructure analysis is important for identifying relationships between domains that share malicious hosting environments.
 
-DNS infrastructure can reveal relationships with other malicious domains.
+---
 
-Screenshot
-![DNS Records](screenshots/dns-records.png)
-3 HTTPS Certificate Intelligence
+# DNS Records Evidence
 
-The domain uses an SSL certificate issued by ZeroSSL.
+threat-intelligence/17ebook-domain-investigation/Screenshot/dNS.png)
 
-Issuer
-ZeroSSL ECC Domain Secure Site CA
+---
 
-Validity
-09 July 2025 to 07 October 2025
+# 4 HTTPS Certificate Analysis
 
-JARM fingerprint
+The domain uses a valid HTTPS certificate issued by ZeroSSL.
 
-1dd40d40d00040d00042d43d000000831b6af40378e2dd35eeac4e9311926e
+**Certificate Issuer:** ZeroSSL ECC Domain Secure Site CA  
+**Certificate Validity:**  
+- Not Before: 09 July 2025  
+- Not After: 07 October 2025  
+**Public Key Algorithm:** Elliptic Curve Cryptography using secp384r1  
 
-Attackers often use valid certificates to make malicious websites appear legitimate.
+Although HTTPS encryption is present, attackers often use legitimate SSL certificates to make malicious websites appear trustworthy.
 
-4 Passive DNS History
+**JARM fingerprint:**  
+1dd40d40d00040d00042d43d000000831b6af40378e2dd35eeac4e9311926e  
 
-Passive DNS analysis reveals several IP addresses historically linked to the domain.
+JARM fingerprints help analysts track servers across different attack campaigns.
+threat-intelligence/17ebook-domain-investigation/Screenshot/Http-certificate.png
+---
 
-Example IP history
+# 5 Passive DNS Historical Analysis
 
-208.91.196.127
-199.59.243.226
-199.59.243.225
-185.53.177.14
+Passive DNS analysis shows historical IP addresses associated with the domain.
 
-Frequent infrastructure changes are common in malicious campaigns.
+Examples include:
 
-Screenshot
-![Passive DNS](screenshots/passive-dns.png)
-5 Subdomain Infrastructure
+208.91.196.127  
+199.59.243.226  
+199.59.243.225  
+185.53.177.14  
+45.33.20.235  
+173.255.194.134  
 
-Threat intelligence analysis identified 84 subdomains associated with the domain.
+Frequent infrastructure changes can indicate attempts to evade detection or move malicious infrastructure between hosting providers.
 
-Examples include
+---
 
-pay.17ebook.com
-2b8be.17ebook.com
-60b73.17ebook.com
-8fa1d.17ebook.com
+# Passive DNS Timeline
 
-Many subdomains appear randomly generated which can indicate automated malicious infrastructure.
+threat-intelligence/17ebook-domain-investigation/Screenshot/Whoislookup.png
 
-6 Malware Communication Activity
+---
 
-Several malware samples were observed communicating with the domain.
+# 6 Subdomain Infrastructure
 
-Examples include
+Threat intelligence analysis identified more than eighty subdomains associated with the domain.
 
-zetvbdsius.exe
-turkeybrain.bat
-DielnHell.exe
-Restart.exe
+Examples include:
 
-These files were detected by multiple security engines.
+pay.17ebook.com  
+2b8be.17ebook.com  
+60b73.17ebook.com  
+8fa1d.17ebook.com  
+48c7e.17ebook.com  
 
-Screenshot
-![Communicating Files](screenshots/communicating-files.png)
-7 Indicators of Compromise
+Many of these subdomains appear randomly generated. Random subdomain patterns are often associated with automated malicious infrastructure or malware command and control systems.
+threat-intelligence/17ebook-domain-investigation/Screenshot/subdomian.png
+---
 
-Domain
-17ebook.com
+# 7 Malware Communication Analysis
 
-IP addresses
+Threat intelligence results show several malicious files communicating with the domain infrastructure.
 
-208.91.196.127
-208.91.196.152
-199.59.243.225
+Examples include:
 
-Malicious files
+- zetvbdsius.exe  
+- turkeybrain.bat  
+- DielnHell.exe  
+- Restart.exe  
+- spnSetupFree.exe  
 
-zetvbdsius.exe
-turkeybrain.bat
-DielnHell.exe
+Some of these files were detected by more than thirty antivirus engines. These files include executable malware, batch scripts, and malicious scripts.
 
-8 Threat Intelligence Graph
+---
 
-Threat graph analysis reveals relationships between malware samples and domain infrastructure.
+# Communicating Malware Files
+
+threat-intelligence/17ebook-domain-investigation/Screenshot/infrasturre1.png
+
+---
+
+# 8 Threat Intelligence Graph
+
+Threat intelligence graph analysis reveals relationships between the domain, associated malware files, and infrastructure components.
+
+This visualization helps analysts identify links between malicious infrastructure and cyber campaigns.
+
+---
+
+# Infrastructure Relationship Graph
+
+threat-intelligence/17ebook-domain-investigation/Screenshot/graphy.png
+
+---
+
+# 9 Indicators of Compromise
+
+The following indicators were identified during the investigation.
+
+**Domain:** 17ebook.com  
+
+**IP Addresses:**  
+- 208.91.196.127  
+- 208.91.196.152  
+- 199.59.243.225  
+- 199.59.243.226  
+
+**Malicious Files:**  
+- zetvbdsius.exe  
+- turkeybrain.bat  
+- DielnHell.exe  
+- Restart.exe  
+
+These indicators can be used by security teams to block or monitor suspicious activity.
+
+---
+
+# 10 Risk Assessment
+
+The investigation reveals several characteristics commonly associated with malicious infrastructure:
+
+- Use of WHOIS privacy protection  
+- Association with malicious files  
+- Presence of suspicious subdomains  
+- Multiple antivirus detections  
+- Frequent IP address changes  
+
+These indicators suggest the domain has been involved in malicious cyber activity.
+
+---
+
+# 11 Conclusion
+
+The investigation of the domain **17ebook.com** shows strong evidence linking the infrastructure to malware distribution and suspicious activity.
+
+Threat intelligence results from VirusTotal revealed connections between the domain and several malicious files as well as suspicious subdomain infrastructure.
+
+Organizations should treat the domain as high risk and monitor or block network communication associated with it.
