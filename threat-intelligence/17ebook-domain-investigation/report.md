@@ -26,14 +26,15 @@ The domain **17ebook.com** was analyzed using threat intelligence tools to deter
 **Detection Rate:** 12 out of 94 security engines flagged the domain as malicious
 
 These results indicate that the domain has previously been associated with suspicious or malicious activity.
-threat-intelligence/17ebook-domain-investigation/Screenshot/Wwhoislookup.png
+
+threat-intelligence/17ebook-domain-investigation/screenshots/Wwhoislookup.png
 ---
 
 # Detection Engine Results
 
 The following screenshot shows the antivirus engines that detected the domain as malicious.
 
-(threat-intelligence/17ebook-domain-investigation/Screenshot/Summary details.png)
+threat-intelligence/17ebook-domain-investigation/screenshots/Summary details.png
 
 Several vendors including Fortinet, Sophos, and Kaspersky classified the domain as phishing or malicious infrastructure.
 
@@ -54,7 +55,7 @@ DNS infrastructure analysis is important for identifying relationships between d
 
 # DNS Records Evidence
 
-threat-intelligence/17ebook-domain-investigation/Screenshot/dNS.png)
+threat-intelligence/17ebook-domain-investigation/screenshots/dNS.png)
 
 ---
 
@@ -74,7 +75,7 @@ Although HTTPS encryption is present, attackers often use legitimate SSL certifi
 1dd40d40d00040d00042d43d000000831b6af40378e2dd35eeac4e9311926e  
 
 JARM fingerprints help analysts track servers across different attack campaigns.
-threat-intelligence/17ebook-domain-investigation/Screenshot/Http-certificate.png
+threat-intelligence/17ebook-domain-investigation/screenshots/Http-certificate.png
 ---
 
 # 5 Passive DNS Historical Analysis
@@ -96,7 +97,7 @@ Frequent infrastructure changes can indicate attempts to evade detection or move
 
 # Passive DNS Timeline
 
-threat-intelligence/17ebook-domain-investigation/Screenshot/Whoislookup.png
+threat-intelligence/17ebook-domain-investigation/screenshots/Whoislookup.png
 
 ---
 
@@ -113,7 +114,7 @@ pay.17ebook.com
 48c7e.17ebook.com  
 
 Many of these subdomains appear randomly generated. Random subdomain patterns are often associated with automated malicious infrastructure or malware command and control systems.
-threat-intelligence/17ebook-domain-investigation/Screenshot/subdomian.png
+threat-intelligence/17ebook-domain-investigation/screenshots/subdomian.png
 ---
 
 # 7 Malware Communication Analysis
@@ -134,7 +135,7 @@ Some of these files were detected by more than thirty antivirus engines. These f
 
 # Communicating Malware Files
 
-threat-intelligence/17ebook-domain-investigation/Screenshot/infrasturre1.png
+threat-intelligence/17ebook-domain-investigation/screenshots/infrasturre1.png
 
 ---
 
@@ -148,7 +149,7 @@ This visualization helps analysts identify links between malicious infrastructur
 
 # Infrastructure Relationship Graph
 
-threat-intelligence/17ebook-domain-investigation/Screenshot/graphy.png
+threat-intelligence/17ebook-domain-investigation/screenshots/graphy.png
 
 ---
 
