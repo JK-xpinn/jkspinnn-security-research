@@ -1,11 +1,11 @@
 # Threat Intelligence Investigation Report
 ## Domain Malware Infrastructure Analysis
 
-Researcher: Adekunle A Joseph  
-Handle: JK_spinnn  
-Institution: VEPHLA University  
+**Researcher:** Adekunle A Joseph  
+**Handle:** JK_spinnn  
+**Institution:** VEPHLA University  
 
-Investigation Date: 2025-07-20
+**Investigation Date:** 2025-07-20
 
 ---
 
@@ -13,9 +13,9 @@ Investigation Date: 2025-07-20
 
 This investigation analyzes three suspicious domains:
 
-• gumblar.cn  
-• martuz.cn  
-• beladen.net  
+- gumblar.cn  
+- martuz.cn  
+- beladen.net  
 
 The analysis was conducted using VirusTotal threat intelligence tools including URL scanning, malware sandbox analysis, DNS infrastructure monitoring, and threat intelligence graph relationships.
 
@@ -27,53 +27,41 @@ Evidence collected shows historical connections to malware delivery, suspicious 
 
 # Investigation Methodology
 
-Threat intelligence analysis was conducted using the following techniques.
-
 ### Tools Used
 
-VirusTotal Threat Intelligence Platform
+- VirusTotal Threat Intelligence Platform
 
 ### Analysis Techniques
 
-• URL multi engine scanning  
-• Passive DNS investigation  
-• Malware file relationship analysis  
-• Subdomain infrastructure mapping  
-• Threat intelligence graph correlation  
-• Historical detection monitoring
+- URL multi-engine scanning  
+- Passive DNS investigation  
+- Malware file relationship analysis  
+- Subdomain infrastructure mapping  
+- Threat intelligence graph correlation  
+- Historical detection monitoring
 
 ---
 
 # Domain Investigation
 
----
+## 1 Domain Analysis: gumblar.cn
 
-# 1 Domain Analysis: gumblar.cn
+### Detection Summary
 
-## Detection Summary
+- Detection Rate: 13 / 94 vendors  
+- Reputation Score: -9
 
-Detection Rate: 13 / 94 vendors  
-Reputation Score: -9
+**Vendors Detecting:**  
+alphaMountain.ai, CRDF
 
-### Vendors Detecting
+**Categories:**  
+Malware site, Malicious infrastructure
 
-alphaMountain.ai  
-CRDF
-
-### Categories
-
-Malware site  
-Malicious infrastructure
-
----
-
-## Evidence Screenshot
+### Evidence Screenshot
 
 ![gumblar detection](threat-intelligence/domain-threat-investigation/screenshots/gumblar.cn.png)
 
----
-
-## Passive DNS Infrastructure
+### Passive DNS Infrastructure
 
 | Date | IP Address | Detection |
 |-----|-----|-----|
@@ -83,164 +71,117 @@ Malicious infrastructure
 | 2010-03-18 | 210.188.201.7 | 0/94 |
 | 2009-08-06 | 210.188.201.7 | 0/94 |
 
----
+### Behavioral Analysis
 
-## Behavioral Analysis
+- Drive-by malware download campaigns  
+- Browser exploit redirections  
+- Hosting of trojans and rootkits  
+- JavaScript-based exploit kits
 
-Observed activities include:
+### Threat Intelligence Insight
 
-• Drive by malware download campaigns  
-• Browser exploit redirections  
-• Hosting of trojans and rootkits  
-• JavaScript based exploit kits
-
----
-
-## Threat Intelligence Insight
-
-The domain has historical links to the **Gumblar malware campaign**, which infected thousands of websites by injecting malicious scripts.
-
-This campaign was known for distributing trojans and performing credential theft attacks.
+gumblar.cn is historically linked to the **Gumblar malware campaign**, which injected malicious scripts on thousands of websites, distributing trojans and performing credential theft attacks.
 
 ---
 
-# 2 Domain Analysis: martuz.cn
+## 2 Domain Analysis: martuz.cn
 
-## Detection Summary
+### Detection Summary
 
-Detection Rate: 15 / 94 vendors  
-Reputation Score: 0
+- Detection Rate: 15 / 94 vendors  
+- Reputation Score: 0
 
-### Vendors Detecting
+**Vendors Detecting:**  
+alphaMountain.ai, Antiy AVL, BitDefender, CyRadar, DrWeb, Fortinet, Kaspersky, Sophos, VIPRE, Webroot, Yandex Safebrowsing
 
-alphaMountain.ai  
-Antiy AVL  
-BitDefender  
-CyRadar  
-DrWeb  
-Fortinet  
-Kaspersky  
-Sophos  
-VIPRE  
-Webroot  
-Yandex Safebrowsing
-
----
-
-## Evidence Screenshot
+### Evidence Screenshot
 
 ![martuz detection](threat-intelligence/domain-threat-investigation/screenshots/martuz.cn.png)
 
----
+### Passive DNS Infrastructure
 
-## Passive DNS Infrastructure
+- 104.21.51.61  
+- 172.67.222.134  
+- 38.28.172.5  
+- 38.28.171.8  
+- 168.206.162.190  
+- 164.88.18.168  
+- 45.201.229.12  
+- 103.224.182.210  
+- 70.32.1.32  
+- 170.178.168.203  
 
-Historical IPs:
+### Subdomain Infrastructure
 
-104.21.51.61  
-172.67.222.134  
-38.28.172.5  
-38.28.171.8  
-168.206.162.190  
-164.88.18.168  
-45.201.229.12  
-103.224.182.210  
-70.32.1.32  
-170.178.168.203  
+- gumblar.martuz.cn  
+- ww31.martuz.cn  
+- ww6.martuz.cn  
+- ww38.martuz.cn  
+- zecz.martuz.cn  
+- jfoh.martuz.cn  
+- ljdt.martuz.cn  
 
----
-
-## Subdomain Infrastructure
-
-Observed suspicious subdomains:
-
-gumblar.martuz.cn  
-ww31.martuz.cn  
-ww6.martuz.cn  
-ww38.martuz.cn  
-zecz.martuz.cn  
-jfoh.martuz.cn  
-ljdt.martuz.cn  
-
----
-
-## Malware File Relations
+### Malware File Relations
 
 | File | Type | Detection |
 |-----|-----|-----|
 | laughter7.htm | HTML | 38/64 |
 | toturial.exe | Executable | 16/70 |
 
----
+### Behavioral Analysis
 
-## Behavioral Analysis
-
-The domain appears to be involved in:
-
-• Malware hosting infrastructure  
-• Phishing activity  
-• Payload delivery using executable files  
-• Redirect based infection chains
+- Malware hosting infrastructure  
+- Phishing activity  
+- Payload delivery using executable files  
+- Redirect-based infection chains
 
 ---
 
-# 3 Domain Analysis: beladen.net
+## 3 Domain Analysis: beladen.net
 
-## Detection Summary
+### Detection Summary
 
-Detection Rate: 2 / 94 vendors
+- Detection Rate: 2 / 94 vendors  
+- Categories: Malicious infrastructure, Spyware and malware
 
-Categories:
-
-Malicious infrastructure  
-Spyware and malware
-
----
-
-## Evidence Screenshot
+### Evidence Screenshot
 
 ![beladen detection](threat-intelligence/domain-threat-investigation/screenshots/beladen.net.png)
 
----
-
-## Passive DNS Infrastructure
+### Passive DNS Infrastructure
 
 | IP Address |
 |-----|
-69.172.201.217 |
-213.247.47.190 |
-174.137.132.28 |
-54.72.9.51 |
-69.43.161.167 |
+| 69.172.201.217 |
+| 213.247.47.190 |
+| 174.137.132.28 |
+| 54.72.9.51 |
+| 69.43.161.167 |
+
+### Behavioral Analysis
+
+- Parked domain infrastructure  
+- Historical malware association  
+- Possible phishing infrastructure reuse
 
 ---
 
-## Behavioral Analysis
+# Cross Domain Correlation & Comparison
 
-The domain shows signs of:
+## Observed Correlations
 
-• Parked domain infrastructure  
-• Historical malware association  
-• Possible phishing infrastructure reuse
+- gumblar.cn and martuz.cn are strongly linked to **active malware campaigns**  
+- beladen.net is a **secondary/dormant node** but shares infrastructure with active domains  
+- Subdomains show patterns of malware hosting, phishing, and redirect chains  
+- Shared IP addresses indicate possible reuse of compromised servers
 
----
+## Key Differences
 
-# Cross Domain Correlation Analysis
-
-Threat intelligence graph analysis suggests possible relationships between these domains.
-
-### Infrastructure Similarities
-
-Common characteristics observed:
-
-• Similar malware hosting behavior  
-• DNS infrastructure rotation  
-• Suspicious subdomain patterns  
-• Shared malware distribution techniques
-
-### Campaign Pattern
-
-gumblar.cn and martuz.cn show stronger links to **active malware campaigns**, while beladen.net appears to serve as a **secondary or dormant infrastructure node**.
+| Domain | Activity Level | Malware / Phishing | Infrastructure Role |
+|--------|----------------|-----------------|-------------------|
+| gumblar.cn | High | Trojans, Rootkits, JS Exploits | Active malware campaign |
+| martuz.cn | High | HTML/EXE payloads, phishing | Active malware campaign |
+| beladen.net | Low | Spyware / parked domain | Dormant / secondary node |
 
 ---
 
@@ -248,90 +189,94 @@ gumblar.cn and martuz.cn show stronger links to **active malware campaigns**, wh
 
 ### Domains
 
-gumblar.cn  
-martuz.cn  
-beladen.net  
+- gumblar.cn  
+- martuz.cn  
+- beladen.net  
 
 ### Suspicious Subdomains
 
-gumblar.martuz.cn  
-ww31.martuz.cn  
-ww6.martuz.cn  
-ww38.martuz.cn  
-zecz.martuz.cn  
-jfoh.martuz.cn  
-ljdt.martuz.cn  
+- gumblar.martuz.cn  
+- ww31.martuz.cn  
+- ww6.martuz.cn  
+- ww38.martuz.cn  
+- zecz.martuz.cn  
+- jfoh.martuz.cn  
+- ljdt.martuz.cn  
 
 ### Suspicious IP Addresses
 
-217.160.0.187  
-91.195.240.40  
-210.188.201.7  
-104.21.51.61  
-172.67.222.134  
-38.28.172.5  
-38.28.171.8  
-168.206.162.190  
-164.88.18.168  
-45.201.229.12  
-103.224.182.210  
-70.32.1.32  
-170.178.168.203  
-69.172.201.217  
-213.247.47.190  
-174.137.132.28  
-54.72.9.51  
-69.43.161.167  
+217.160.0.187, 91.195.240.40, 210.188.201.7, 104.21.51.61, 172.67.222.134, 38.28.172.5, 38.28.171.8, 168.206.162.190, 164.88.18.168, 45.201.229.12, 103.224.182.210, 70.32.1.32, 170.178.168.203, 69.172.201.217, 213.247.47.190, 174.137.132.28, 54.72.9.51, 69.43.161.167  
 
 ---
 
 # Defensive Security Measures
 
-Based on the investigation, the following defensive measures are recommended.
-
 ### Network Security
 
-Block malicious domains and IP addresses using firewall and DNS filtering systems.
-
-Organizations should add these domains to DNS blocklists to prevent internal network communication.
-
----
+- Block malicious domains and IP addresses using firewall and DNS filtering systems  
+- Add domains to DNS blocklists to prevent internal network communication  
 
 ### Endpoint Protection
 
-Deploy advanced endpoint detection systems capable of identifying malware payloads associated with these domains.
-
-Monitoring should include:
-
-• executable downloads  
-• malicious DLL activity  
-• suspicious HTML exploit files
-
----
+- Deploy advanced endpoint detection systems capable of identifying malware payloads from these domains  
+- Monitor executable downloads, DLL activity, and suspicious HTML exploit files  
 
 ### Threat Intelligence Monitoring
 
-Security teams should continuously monitor threat intelligence feeds to detect new infrastructure linked to these domains.
-
----
+- Continuously monitor threat intelligence feeds to detect new infrastructure linked to these domains  
 
 ### Security Awareness
 
-User awareness training should be implemented to prevent phishing attacks and malicious downloads originating from suspicious domains.
+- User training to prevent phishing attacks and downloads from suspicious domains  
 
 ---
 
 # Investigation Evidence
 
 ## Screenshots
-![Ivestigation Evidence](threat-intelligence/domain-threat-investigation/screenshots)
 
-![Ivestigation Walkthrough Video](https://drive.google.com/drive/folders/1xIPPe-aFZwnCZy8XmCd-4EbPnKfip8_a?usp=drive_link)
+![Investigation Evidence](threat-intelligence/domain-threat-investigation/screenshots)
 
-# Conclusion
+## Walkthrough Video
 
-The investigation confirms that gumblar.cn and martuz.cn demonstrate strong associations with malware distribution infrastructure.
+[Investigation Walkthrough Video](https://drive.google.com/drive/folders/1xIPPe-aFZwnCZy8XmCd-4EbPnKfip8_a?usp=drive_link)
 
-beladen.net shows weaker but still notable links to suspicious activity.
+---
 
-All three domains should be treated as potentially malicious and monitored 
+# Network Correlation Diagram
+
+```mermaid
+graph LR
+    gumblar[gumblar.cn]
+    martuz[martuz.cn]
+    beladen[beladen.net]
+
+    gumblar --> IP1[217.160.0.187]
+    gumblar --> IP2[91.195.240.40]
+    gumblar --> IP3[210.188.201.7]
+
+    martuz --> IP4[104.21.51.61]
+    martuz --> IP5[172.67.222.134]
+    martuz --> IP6[38.28.172.5]
+    martuz --> IP7[38.28.171.8]
+    martuz --> IP8[168.206.162.190]
+
+    beladen --> IP9[69.172.201.217]
+    beladen --> IP10[213.247.47.190]
+    beladen --> IP11[174.137.132.28]
+
+    martuz --> Sub1[gumblar.martuz.cn]
+    martuz --> Sub2[ww31.martuz.cn]
+    martuz --> Sub3[ww6.martuz.cn]
+    martuz --> Sub4[ww38.martuz.cn]
+    martuz --> Sub5[zecz.martuz.cn]
+    martuz --> Sub6[jfoh.martuz.cn]
+    martuz --> Sub7[ljdt.martuz.cn]
+
+***Conclusion***
+
+gumblar.cn and martuz.cn demonstrate strong associations with malware distribution infrastructure
+
+beladen.net shows weaker but notable links to suspicious activity
+
+All three domains should be treated as potentially malicious and monitored
