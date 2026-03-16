@@ -242,7 +242,13 @@ alphaMountain.ai, Antiy AVL, BitDefender, CyRadar, DrWeb, Fortinet, Kaspersky, S
 [Investigation Walkthrough Video](https://drive.google.com/drive/folders/1xIPPe-aFZwnCZy8XmCd-4EbPnKfip8_a?usp=drive_link)
 
 ---
+ ## Conclusion
 
+gumblar.cn and martuz.cn demonstrate strong associations with malware distribution infrastructure
+
+beladen.net shows weaker but notable links to suspicious activity
+
+All three domains should be treated as potentially malicious and monitored
 # Network Correlation Diagram
 
 ```mermaid
@@ -273,10 +279,3 @@ graph LR
     martuz --> Sub6[jfoh.martuz.cn]
     martuz --> Sub7[ljdt.martuz.cn]
 
-***Conclusion***
-
-gumblar.cn and martuz.cn demonstrate strong associations with malware distribution infrastructure
-
-beladen.net shows weaker but notable links to suspicious activity
-
-All three domains should be treated as potentially malicious and monitored
