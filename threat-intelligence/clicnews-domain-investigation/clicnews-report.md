@@ -81,7 +81,7 @@ Historical IPs associated with the domain:
 72.52.4.119  
 
 These IPs indicate a mix of hosting providers and intermittent detection events over time.
-![DNS Infrastructure](threat-intelligence/clicnews-domain-investigation/screenshots/passive dns.png)
+![DNS Infrastructure](threat-intelligence/clicnews-domain-investigation/screenshots/passive-dns.png)
 
 ---
 
