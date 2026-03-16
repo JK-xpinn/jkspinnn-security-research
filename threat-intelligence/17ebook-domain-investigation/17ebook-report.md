@@ -3,8 +3,9 @@
 
 Researcher: Adekunle A Joseph  
 Handle: JK_spinnn  
-Threat Intelligence Tool: VirusTotal  
+Threat Intelligence Tool: VirusTotal 
 
+**Investigation Date:** 2025-07-24
 ---
 
 # Executive Summary
