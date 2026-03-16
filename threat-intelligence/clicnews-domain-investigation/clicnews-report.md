@@ -61,7 +61,7 @@ These metrics indicate low popularity but presence in threat intelligence datase
 
 Even though the domain uses HTTPS, malicious actors often use valid certificates to appear trustworthy.  
 ![WHOIS Details](threat-intelligence/clicnews-domain-investigation/screenshots/whoislookup.png)
-![HTPPS Certificate](threat-intelligence/clicnews-domain-investigation/screenshots/http-cert.png)
+![HTTPS Certificate](threat-intelligence/clicnews-domain-investigation/screenshots/http-cert.png)
 
 ---
 
@@ -80,7 +80,7 @@ Historical IPs associated with the domain:
 91.195.240.126  
 72.52.4.119  
 
-These IPs indicate a mix of hosting providers and intermittent detection events over time.
+These IPs indicate a mix of hosting providers and intermittent detection events over time.  
 ![DNS Infrastructure](threat-intelligence/clicnews-domain-investigation/screenshots/passive-dns.png)
 
 ---
@@ -118,7 +118,7 @@ Detection results for notable subdomains:
 | 2a.clicnews.com | 1 / 94 |
 | seed.clicnews.com | 0 / 94 |
 
-Random or multiple subdomains can indicate infrastructure used for phishing, spam, or malware delivery.
+Random or multiple subdomains can indicate infrastructure used for phishing, spam, or malware delivery.  
 ![Subdomain Evidence](threat-intelligence/clicnews-domain-investigation/screenshots/subdomain.png)
 
 ---
@@ -137,21 +137,35 @@ These IoCs can be used by security teams to block or monitor suspicious traffic.
 
 ---
 
-# 6 Risk Assessment
+# 6 Defensive Recommendations
 
-The investigation identifies the following potential risk factors:
+Organizations should consider implementing the following actions:
 
-- Flagged by security vendors  
+- Block the domain **clicnews.com** at DNS or firewall level  
+- Monitor network traffic for connections to identified IP addresses  
+- Investigate any endpoints that communicate with suspicious subdomains  
+- Include the domain in endpoint detection and response (EDR) systems for monitoring  
+- Regularly update threat intelligence feeds to detect new associated malware or subdomains  
+
+These measures help reduce exposure to potential malware or phishing campaigns.
+
+---
+
+# 7 Risk Assessment
+
+The investigation identifies the following risk factors:
+
+- Detection by security vendors  
 - Low community reputation score  
 - Multiple subdomains with suspicious IPs  
 - Historical DNS patterns linked to phishing/malware  
 
-Organizations should consider **monitoring or blocking** the domain to reduce exposure.
+These factors indicate that **clicnews.com may be part of risky infrastructure**, requiring monitoring or defensive action.
 
 ---
 
-# 7 Conclusion
+# 8 Conclusion
 
-The domain **clicnews.com** exhibits characteristics of potentially risky infrastructure with historical detections and suspicious subdomain patterns.
+The domain **clicnews.com** exhibits characteristics of potentially risky infrastructure, with historical detections and suspicious subdomain patterns.
 
 Security teams should treat it as a **high-risk domain**, applying defensive measures such as DNS blocking, network monitoring, and endpoint awareness to prevent possible compromise.
