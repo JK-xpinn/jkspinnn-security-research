@@ -324,6 +324,14 @@ User awareness training should be implemented to prevent phishing attacks and ma
 # Investigation Evidence
 
 ## Screenshots
+![Ivestigation Evidence](threat-intelligence/domain-threat-investigation/screenshots)
 
-Place screenshots in the folder:
+![Ivestigation Walkthrough Video](https://drive.google.com/drive/folders/1xIPPe-aFZwnCZy8XmCd-4EbPnKfip8_a?usp=drive_link)
 
+# Conclusion
+
+The investigation confirms that gumblar.cn and martuz.cn demonstrate strong associations with malware distribution infrastructure.
+
+beladen.net shows weaker but still notable links to suspicious activity.
+
+All three domains should be treated as potentially malicious and monitored 
