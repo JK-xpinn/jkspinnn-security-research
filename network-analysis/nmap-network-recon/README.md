@@ -221,6 +221,7 @@ Example command:
 
 ```
 nmap -sV --script=vuln 192.168.146.128
+nmap -sV --script=vuln 172.20.10.2
 ```
 ![Evidencea](network-analysis/nmap-network-recon/screenshots/5.png)
 
